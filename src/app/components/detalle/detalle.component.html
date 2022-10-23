@@ -1,0 +1,15 @@
+<div class="card bg-dark text-white">
+  <div class="card-header">
+   {{ titulo }}
+  </div>
+  <div class="card-body">
+    <div class="input-group" *ngIf="authService.hasRole('ROLE_ADMIN')">
+         
+        <input (change)="seleccionarFoto($event)" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+      </div>
+
+
+
+  </div>
+</div>
